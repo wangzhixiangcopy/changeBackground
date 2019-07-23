@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+:root,
+body{
+    height: 100%;
+}
+.wrapper ul::after{
+    content: '';
+    display: inline-block;
+    clear: both;
+}
+.wrapper>ul {
+    display: table;
+    position: fixed;
+    right: 5px;
+    bottom: 100px;
+}
+.wrapper ul li{
+    float: left;  
+}
+.wrapper ul li a{
+    color: #fff;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0 10px;
+    border-radius: 9px;
+}
+.wrapper ul li .r{
+    background: #f00;
+}
+.wrapper ul li .g{
+    background-color: #0f0;
+}
+.wrapper ul li .b{
+    background-color: #00f;
+}
+.wrapper ul li .w{
+    background-color:#f40;
+}
+/* 背景色 */
+.wrpper,
+ div{
+    height: 100%;
+    width: 100%;
+}
+.wrapper #red{
+    background-color: #f00;
+}
+.wrapper #green{
+    background-color: #0f0;
+}
+.wrapper #blue{
+    background-color: #00f;
+}
+.wrapper #white{
+    background-color: transparent;
+}
+/* 点击切换背景： */
+div[id]:not(:target) {
+    display: none;
+}
